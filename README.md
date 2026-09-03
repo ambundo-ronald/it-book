@@ -18,7 +18,7 @@ The current workspace contains a starter custom app scaffold and implementation 
 
 ## Frappe Cloud Install
 
-Use repository `https://github.com/ambundo-ronald/it-book` and branch `master`. The Frappe app root is `it_book/`, with `pyproject.toml` at `it_book/pyproject.toml` and hooks at `it_book/it_book/hooks.py`.
+Use repository `https://github.com/ambundo-ronald/it-book` and branch `master`. The Frappe app root is `it_book/`, with `pyproject.toml` at `it_book/pyproject.toml` and hooks at `it_book/hooks.py`.
 
 ## Install In A Frappe Bench
 
@@ -37,9 +37,9 @@ For development, a cleaner path is to create a bench app with `bench new-app it_
 
 ## Useful Entry Points
 
-- App hooks: `it_book/it_book/hooks.py`
-- Dashboard and email summary logic: `it_book/it_book/reporting/summary.py`
-- Whitelisted dashboard/report APIs: `it_book/it_book/reporting/api.py`
+- App hooks: `it_book/hooks.py`
+- Dashboard and email summary logic: `it_book/reporting/summary.py`
+- Whitelisted dashboard/report APIs: `it_book/reporting/api.py`
 - Blueprint: `docs/it-book-blueprint.md`
 - Doctype catalog: `docs/frappe-doctype-catalog.md`
 - Spreadsheet import helper: `it_book/scripts/export_projects_from_xlsx.py`
