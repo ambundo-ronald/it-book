@@ -1,0 +1,50 @@
+.it-book-dashboard {
+  padding-bottom: 24px;
+}
+
+.it-book-loading {
+  padding: 24px 0;
+}
+
+.it-book-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-bottom: 18px;
+}
+
+.it-book-metric {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 14px;
+  background: var(--card-bg);
+}
+
+.it-book-metric-label {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.it-book-metric-value {
+  font-size: 26px;
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+.it-book-metric-hint {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.it-book-sections {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.it-book-section h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}

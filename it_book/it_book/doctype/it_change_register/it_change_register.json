@@ -1,0 +1,27 @@
+{
+  "doctype": "DocType",
+  "name": "IT Change Register",
+  "module": "IT Book",
+  "autoname": "format:IT-CHG-.#####",
+  "title_field": "change_title",
+  "fields": [
+    {"fieldname": "change_title", "label": "Change Title", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "change_type", "label": "Change Type", "fieldtype": "Select", "options": "New Feature\nEnhancement\nDiscontinued Feature\nConfiguration\nSecurity\nInfrastructure\nEmergency"},
+    {"fieldname": "system_name", "label": "System", "fieldtype": "Data"},
+    {"fieldname": "requested_by", "label": "Requested By", "fieldtype": "Data"},
+    {"fieldname": "owner_name", "label": "Owner", "fieldtype": "Data"},
+    {"fieldname": "requested_date", "label": "Requested Date", "fieldtype": "Date"},
+    {"fieldname": "planned_release_date", "label": "Planned Release Date", "fieldtype": "Date"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Requested\nImpact Review\nApproved\nIn Progress\nReleased\nRejected\nRolled Back\nDiscontinued", "default": "Requested"},
+    {"fieldname": "risk_level", "label": "Risk Level", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nCritical"},
+    {"fieldname": "approval_notes", "label": "Approval Notes", "fieldtype": "Small Text"},
+    {"fieldname": "rollback_plan", "label": "Rollback Plan", "fieldtype": "Text Editor"},
+    {"fieldname": "release_notes", "label": "Release Notes", "fieldtype": "Text Editor"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "Department Head", "read": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

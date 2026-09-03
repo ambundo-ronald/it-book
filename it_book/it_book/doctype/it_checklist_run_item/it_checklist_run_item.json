@@ -1,0 +1,14 @@
+{
+  "doctype": "DocType",
+  "name": "IT Checklist Run Item",
+  "module": "IT Book",
+  "istable": 1,
+  "fields": [
+    {"fieldname": "task", "label": "Task", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Pending\nDone\nNot Applicable\nBlocked", "default": "Pending"},
+    {"fieldname": "completed_by", "label": "Completed By", "fieldtype": "Data"},
+    {"fieldname": "completed_on", "label": "Completed On", "fieldtype": "Datetime"},
+    {"fieldname": "notes", "label": "Notes", "fieldtype": "Small Text"}
+  ],
+  "permissions": []
+}

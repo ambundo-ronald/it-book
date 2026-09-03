@@ -1,0 +1,8 @@
+{
+  "doctype": "Page",
+  "name": "it-book-dashboard",
+  "module": "IT Book",
+  "title": "IT Book Dashboard",
+  "icon": "fa fa-desktop",
+  "standard": "Yes"
+}

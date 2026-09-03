@@ -1,0 +1,17 @@
+{
+  "doctype": "DocType",
+  "name": "IT Report Recipient",
+  "module": "IT Book",
+  "autoname": "field:email",
+  "title_field": "email",
+  "fields": [
+    {"fieldname": "email", "label": "Email", "fieldtype": "Data", "options": "Email", "reqd": 1, "unique": 1},
+    {"fieldname": "recipient_name", "label": "Recipient Name", "fieldtype": "Data"},
+    {"fieldname": "frequency", "label": "Frequency", "fieldtype": "Select", "options": "Daily\nWeekly\nBoth", "default": "Weekly"},
+    {"fieldname": "enabled", "label": "Enabled", "fieldtype": "Check", "default": 1}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "doctype": "Report",
+  "name": "IT Change Register Report",
+  "module": "IT Book",
+  "ref_doctype": "IT Change Register",
+  "report_type": "Script Report",
+  "is_standard": "Yes",
+  "add_total_row": 1,
+  "disabled": 0
+}

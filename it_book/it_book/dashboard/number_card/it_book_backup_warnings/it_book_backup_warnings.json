@@ -1,0 +1,12 @@
+{
+  "doctype": "Number Card",
+  "name": "IT Book Backup Warnings",
+  "label": "Backup Warnings",
+  "module": "IT Book",
+  "document_type": "IT Backup Log",
+  "function": "Count",
+  "is_public": 1,
+  "show_percentage_stats": 1,
+  "stats_time_interval": "Daily",
+  "filters_json": "[[\"IT Backup Log\",\"status\",\"in\",[\"Warning\",\"Failed\"],false]]"
+}

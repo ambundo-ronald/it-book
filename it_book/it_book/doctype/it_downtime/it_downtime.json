@@ -1,0 +1,23 @@
+{
+  "doctype": "DocType",
+  "name": "IT Downtime",
+  "module": "IT Book",
+  "autoname": "format:IT-DOWN-.#####",
+  "title_field": "system_name",
+  "fields": [
+    {"fieldname": "system_name", "label": "System", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "incident", "label": "Incident", "fieldtype": "Link", "options": "IT Incident"},
+    {"fieldname": "start_time", "label": "Start Time", "fieldtype": "Datetime"},
+    {"fieldname": "end_time", "label": "End Time", "fieldtype": "Datetime"},
+    {"fieldname": "duration_minutes", "label": "Duration Minutes", "fieldtype": "Float"},
+    {"fieldname": "affected_users", "label": "Affected Users", "fieldtype": "Int"},
+    {"fieldname": "business_impact", "label": "Business Impact", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nCritical"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nResolved\nClosed", "default": "Open"},
+    {"fieldname": "notes", "label": "Notes", "fieldtype": "Small Text"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

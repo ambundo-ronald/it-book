@@ -1,0 +1,26 @@
+{
+  "doctype": "DocType",
+  "name": "IT Asset Record",
+  "module": "IT Book",
+  "autoname": "format:IT-ASSET-.#####",
+  "title_field": "asset_name",
+  "fields": [
+    {"fieldname": "asset_name", "label": "Asset Name", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "asset_tag", "label": "Asset Tag", "fieldtype": "Data", "unique": 1},
+    {"fieldname": "category", "label": "Category", "fieldtype": "Select", "options": "Laptop\nDesktop\nPrinter\nNetwork Device\nServer\nPhone\nSoftware License\nPeripheral\nOther"},
+    {"fieldname": "serial_number", "label": "Serial Number", "fieldtype": "Data"},
+    {"fieldname": "assigned_to", "label": "Assigned To", "fieldtype": "Data"},
+    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Available\nAssigned\nUnder Repair\nDisposed\nLost\nRetired", "default": "Available"},
+    {"fieldname": "purchase_date", "label": "Purchase Date", "fieldtype": "Date"},
+    {"fieldname": "warranty_expiry", "label": "Warranty Expiry", "fieldtype": "Date"},
+    {"fieldname": "condition", "label": "Condition", "fieldtype": "Select", "options": "New\nGood\nFair\nPoor\nDamaged"},
+    {"fieldname": "acknowledgement_file", "label": "Acknowledgement File", "fieldtype": "Attach"},
+    {"fieldname": "notes", "label": "Notes", "fieldtype": "Small Text"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

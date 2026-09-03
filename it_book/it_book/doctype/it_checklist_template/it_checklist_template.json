@@ -1,0 +1,17 @@
+{
+  "doctype": "DocType",
+  "name": "IT Checklist Template",
+  "module": "IT Book",
+  "autoname": "field:template_name",
+  "title_field": "template_name",
+  "fields": [
+    {"fieldname": "template_name", "label": "Template Name", "fieldtype": "Data", "reqd": 1, "unique": 1},
+    {"fieldname": "checklist_type", "label": "Checklist Type", "fieldtype": "Select", "options": "Onboarding\nOffboarding\nMaintenance\nAudit\nBackup\nAsset Handover\nOther"},
+    {"fieldname": "items", "label": "Items", "fieldtype": "Table", "options": "IT Checklist Template Item"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

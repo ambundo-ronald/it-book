@@ -1,0 +1,12 @@
+{
+  "doctype": "Dashboard Chart",
+  "name": "IT Incidents By Priority",
+  "chart_name": "IT Incidents By Priority",
+  "module": "IT Book",
+  "chart_type": "Bar",
+  "document_type": "IT Incident",
+  "type": "Group By",
+  "group_by_based_on": "priority",
+  "number_of_groups": 4,
+  "is_public": 1
+}

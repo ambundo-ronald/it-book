@@ -1,0 +1,32 @@
+{
+  "doctype": "DocType",
+  "name": "IT Project",
+  "module": "IT Book",
+  "autoname": "format:IT-PROJ-.#####",
+  "title_field": "project_title",
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "fields": [
+    {"fieldname": "project_title", "label": "Project Title", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
+    {"fieldname": "owner_name", "label": "Owner", "fieldtype": "Data"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Planned\nOngoing\nPending Review\nAt Risk\nCompleted\nCancelled", "default": "Planned"},
+    {"fieldname": "priority", "label": "Priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nCritical", "default": "Medium"},
+    {"fieldname": "start_date", "label": "Start Date", "fieldtype": "Date"},
+    {"fieldname": "due_date", "label": "Due Date", "fieldtype": "Date"},
+    {"fieldname": "completion_date", "label": "Completion Date", "fieldtype": "Date"},
+    {"fieldname": "progress", "label": "Progress %", "fieldtype": "Percent"},
+    {"fieldname": "planned_budget", "label": "Planned Budget", "fieldtype": "Currency"},
+    {"fieldname": "actual_spend", "label": "Actual Spend", "fieldtype": "Currency"},
+    {"fieldname": "budget_utilization", "label": "Budget Utilization %", "fieldtype": "Percent", "read_only": 1},
+    {"fieldname": "alert_status", "label": "Alert Status", "fieldtype": "Select", "options": "\nHealthy\nOverdue\nUnrealistic Report\nBudget Risk\nBlocked"},
+    {"fieldname": "description", "label": "Description", "fieldtype": "Small Text"},
+    {"fieldname": "latest_update", "label": "Latest Update", "fieldtype": "Text Editor"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "Department Head", "read": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

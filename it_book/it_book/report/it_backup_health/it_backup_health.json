@@ -1,0 +1,10 @@
+{
+  "doctype": "Report",
+  "name": "IT Backup Health",
+  "module": "IT Book",
+  "ref_doctype": "IT Backup Log",
+  "report_type": "Script Report",
+  "is_standard": "Yes",
+  "add_total_row": 1,
+  "disabled": 0
+}

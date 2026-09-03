@@ -1,0 +1,12 @@
+{
+  "doctype": "Dashboard Chart",
+  "name": "IT Project Status",
+  "chart_name": "IT Project Status",
+  "module": "IT Book",
+  "chart_type": "Donut",
+  "document_type": "IT Project",
+  "type": "Group By",
+  "group_by_based_on": "status",
+  "number_of_groups": 8,
+  "is_public": 1
+}

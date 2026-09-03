@@ -1,0 +1,22 @@
+[
+  {
+    "doctype": "Role",
+    "role_name": "IT Manager",
+    "desk_access": 1
+  },
+  {
+    "doctype": "Role",
+    "role_name": "IT Officer",
+    "desk_access": 1
+  },
+  {
+    "doctype": "Role",
+    "role_name": "Department Head",
+    "desk_access": 1
+  },
+  {
+    "doctype": "Role",
+    "role_name": "IT Auditor",
+    "desk_access": 1
+  }
+]

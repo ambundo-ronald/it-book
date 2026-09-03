@@ -1,0 +1,26 @@
+{
+  "doctype": "DocType",
+  "name": "IT Asset Movement",
+  "module": "IT Book",
+  "autoname": "format:IT-ASSET-MOVE-.#####",
+  "title_field": "asset",
+  "is_submittable": 1,
+  "fields": [
+    {"fieldname": "asset", "label": "Asset", "fieldtype": "Link", "options": "IT Asset Record", "reqd": 1},
+    {"fieldname": "movement_type", "label": "Movement Type", "fieldtype": "Select", "options": "Assignment\nReturn\nRepair\nDisposal\nTransfer\nAcknowledgement", "reqd": 1},
+    {"fieldname": "from_person", "label": "From", "fieldtype": "Data"},
+    {"fieldname": "to_person", "label": "To", "fieldtype": "Data"},
+    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
+    {"fieldname": "movement_date", "label": "Movement Date", "fieldtype": "Datetime"},
+    {"fieldname": "expected_return_date", "label": "Expected Return Date", "fieldtype": "Date"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nReturned\nClosed\nApproved\nRejected", "default": "Open"},
+    {"fieldname": "approval_reference", "label": "Approval Reference", "fieldtype": "Data"},
+    {"fieldname": "attachment", "label": "Attachment", "fieldtype": "Attach"},
+    {"fieldname": "notes", "label": "Notes", "fieldtype": "Small Text"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1, "submit": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

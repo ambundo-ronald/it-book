@@ -1,0 +1,12 @@
+{
+  "doctype": "DocType",
+  "name": "IT Checklist Template Item",
+  "module": "IT Book",
+  "istable": 1,
+  "fields": [
+    {"fieldname": "task", "label": "Task", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "responsible_role", "label": "Responsible Role", "fieldtype": "Data"},
+    {"fieldname": "is_mandatory", "label": "Mandatory", "fieldtype": "Check", "default": 1}
+  ],
+  "permissions": []
+}

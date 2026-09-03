@@ -1,0 +1,22 @@
+{
+  "doctype": "DocType",
+  "name": "IT Checklist Run",
+  "module": "IT Book",
+  "autoname": "format:IT-CHK-.#####",
+  "title_field": "subject",
+  "fields": [
+    {"fieldname": "subject", "label": "Subject", "fieldtype": "Data", "reqd": 1},
+    {"fieldname": "template", "label": "Template", "fieldtype": "Link", "options": "IT Checklist Template"},
+    {"fieldname": "person_name", "label": "Person", "fieldtype": "Data"},
+    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
+    {"fieldname": "due_date", "label": "Due Date", "fieldtype": "Date"},
+    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nIn Progress\nCompleted\nOverdue\nCancelled", "default": "Open"},
+    {"fieldname": "items", "label": "Items", "fieldtype": "Table", "options": "IT Checklist Run Item"}
+  ],
+  "permissions": [
+    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
+    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
+    {"role": "Department Head", "read": 1},
+    {"role": "IT Auditor", "read": 1}
+  ]
+}

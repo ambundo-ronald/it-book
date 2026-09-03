@@ -1,0 +1,3 @@
+project_title,description,owner_name,department,status,priority,planned_budget,actual_spend,start_date,due_date,progress,latest_update
+ERPNext Accounting Dimension Fix,Resolve project budget extension issue affecting accounting dimensions,Nicholas,Finance,Pending Review,High,100000,25000,2026-01-01,2026-03-31,40,
+Supplier Scorecard,Supplier review after every PO completion,Oliver,Procurement,Ongoing,Medium,0,0,2026-02-01,2026-04-15,20,
