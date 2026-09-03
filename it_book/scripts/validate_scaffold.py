@@ -32,13 +32,13 @@ def validate_python():
 
 def validate_required_files():
     required = [
-        "pyproject.toml",
-        "it_book/hooks.py",
-        "it_book/reporting/api.py",
-        "it_book/reporting/summary.py",
-        "it_book/page/it_book_dashboard/it_book_dashboard.js",
-        "it_book/page/it_book_dashboard/it_book_dashboard.json",
-        "it_book/doctype/it_project/it_project.json",
+        "it_book/pyproject.toml",
+        "it_book/it_book/hooks.py",
+        "it_book/it_book/reporting/api.py",
+        "it_book/it_book/reporting/summary.py",
+        "it_book/it_book/page/it_book_dashboard/it_book_dashboard.js",
+        "it_book/it_book/page/it_book_dashboard/it_book_dashboard.json",
+        "it_book/it_book/doctype/it_project/it_project.json",
     ]
     missing = [path for path in required if not (REPO_ROOT / path).exists()]
     if missing:
