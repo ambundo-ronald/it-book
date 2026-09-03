@@ -174,7 +174,7 @@ Alternative endings:
 4. Normalize statuses to the values in the DocType.
 5. Review budget and progress fields for unrealistic values.
 
-A candidate CSV has already been generated at `output/it_project_import_candidates.csv` using `it_book/scripts/export_projects_from_xlsx.py`.
+Generate a candidate CSV locally at `output/it_project_import_candidates.csv` using `it_book/scripts/export_projects_from_xlsx.py`.
 
 ## MVP Build Order
 

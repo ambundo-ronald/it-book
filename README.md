@@ -43,7 +43,7 @@ For development, a cleaner path is to create a bench app with `bench new-app it_
 - Blueprint: `docs/it-book-blueprint.md`
 - Doctype catalog: `docs/frappe-doctype-catalog.md`
 - Spreadsheet import helper: `it_book/scripts/export_projects_from_xlsx.py`
-- Generated project import CSV: `output/it_project_import_candidates.csv`
+- Generated project import CSV: create locally under `output/`
 
 ## Next Build Steps
 
@@ -55,7 +55,7 @@ For development, a cleaner path is to create a bench app with `bench new-app it_
 
 ## Import Current Project Spreadsheet
 
-The workbook attached to this project has been converted into a candidate import file:
+Generate a candidate import file locally:
 
 ```bash
 python it_book/scripts/export_projects_from_xlsx.py "C:/Users/Norwa Africa/Downloads/NORWA IT PROJECT 2026.xlsx" output/it_project_import_candidates.csv
