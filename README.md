@@ -16,6 +16,10 @@ The current workspace contains a starter custom app scaffold and implementation 
 - Daily and weekly summary emails
 - Due date alerts and report anomaly flags
 
+## Frappe Cloud Install
+
+Use repository `https://github.com/ambundo-ronald/it-book` and branch `master`. The Frappe app root is the repository root, where `pyproject.toml` now lives.
+
 ## Install In A Frappe Bench
 
 From a machine with Frappe Bench installed:
@@ -34,8 +38,8 @@ For development, a cleaner path is to create a bench app with `bench new-app it_
 ## Useful Entry Points
 
 - App hooks: `it_book/hooks.py`
-- Dashboard and email summary logic: `it_book/it_book/reporting/summary.py`
-- Whitelisted dashboard/report APIs: `it_book/it_book/reporting/api.py`
+- Dashboard and email summary logic: `it_book/reporting/summary.py`
+- Whitelisted dashboard/report APIs: `it_book/reporting/api.py`
 - Blueprint: `docs/it-book-blueprint.md`
 - Doctype catalog: `docs/frappe-doctype-catalog.md`
 - Spreadsheet import helper: `it_book/scripts/export_projects_from_xlsx.py`
