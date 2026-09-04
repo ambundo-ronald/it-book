@@ -1,25 +1,93 @@
 {
-  "doctype": "DocType",
-  "name": "IT Incident",
-  "module": "IT Book",
-  "autoname": "format:IT-INC-.#####",
-  "title_field": "incident_title",
-  "fields": [
-    {"fieldname": "incident_title", "label": "Incident Title", "fieldtype": "Data", "reqd": 1},
-    {"fieldname": "reported_on", "label": "Reported On", "fieldtype": "Datetime"},
-    {"fieldname": "reported_by", "label": "Reported By", "fieldtype": "Data"},
-    {"fieldname": "system_name", "label": "System", "fieldtype": "Data"},
-    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
-    {"fieldname": "priority", "label": "Priority", "fieldtype": "Select", "options": "Low\nMedium\nHigh\nCritical", "default": "Medium"},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Open\nInvestigating\nResolved\nClosed\nCancelled", "default": "Open"},
-    {"fieldname": "root_cause", "label": "Root Cause", "fieldtype": "Small Text"},
-    {"fieldname": "resolution", "label": "Resolution", "fieldtype": "Text Editor"},
-    {"fieldname": "closed_on", "label": "Closed On", "fieldtype": "Datetime"}
-  ],
-  "permissions": [
-    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
-    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
-    {"role": "Department Head", "read": 1, "create": 1},
-    {"role": "IT Auditor", "read": 1}
-  ]
+    "doctype":  "DocType",
+    "name":  "IT Incident",
+    "module":  "IT Book",
+    "autoname":  "format:IT-INC-.#####",
+    "title_field":  "incident_title",
+    "fields":  [
+                   {
+                       "fieldname":  "incident_title",
+                       "label":  "Incident Title",
+                       "fieldtype":  "Data",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "reported_on",
+                       "label":  "Reported On",
+                       "fieldtype":  "Datetime"
+                   },
+                   {
+                       "fieldname":  "reported_by",
+                       "label":  "Reported By",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "system_name",
+                       "label":  "System",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "department",
+                       "label":  "Department",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "priority",
+                       "label":  "Priority",
+                       "fieldtype":  "Select",
+                       "options":  "Low\nMedium\nHigh\nCritical",
+                       "default":  "Medium"
+                   },
+                   {
+                       "fieldname":  "status",
+                       "label":  "Status",
+                       "fieldtype":  "Select",
+                       "options":  "Open\nInvestigating\nResolved\nClosed\nCancelled",
+                       "default":  "Open"
+                   },
+                   {
+                       "fieldname":  "root_cause",
+                       "label":  "Root Cause",
+                       "fieldtype":  "Small Text"
+                   },
+                   {
+                       "fieldname":  "resolution",
+                       "label":  "Resolution",
+                       "fieldtype":  "Text Editor"
+                   },
+                   {
+                       "fieldname":  "closed_on",
+                       "label":  "Closed On",
+                       "fieldtype":  "Datetime"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1,
+                            "submit":  1,
+                            "cancel":  1,
+                            "amend":  1
+                        },
+                        {
+                            "role":  "IT Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1
+                        },
+                        {
+                            "role":  "IT Officer",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
+                        },
+                        {
+                            "role":  "IT Auditor",
+                            "read":  1
+                        }
+                    ]
 }

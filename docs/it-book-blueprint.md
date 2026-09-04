@@ -161,9 +161,10 @@ Alternative endings:
 
 ## Roles
 
+Workspace and dashboard visibility is restricted to `System Manager`, `IT Manager`, `IT Officer`, and `IT Auditor`.
+
 - `IT Manager`: full control of IT Book records and reporting setup
 - `IT Officer`: create and update operational records
-- `Department Head`: view department-facing records and create incidents
 - `IT Auditor`: read-only access for audit and compliance
 
 ## Import Plan

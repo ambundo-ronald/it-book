@@ -1,23 +1,87 @@
 {
-  "doctype": "DocType",
-  "name": "IT Maintenance",
-  "module": "IT Book",
-  "autoname": "format:IT-MAINT-.#####",
-  "title_field": "maintenance_title",
-  "fields": [
-    {"fieldname": "maintenance_title", "label": "Maintenance Title", "fieldtype": "Data", "reqd": 1},
-    {"fieldname": "maintenance_type", "label": "Type", "fieldtype": "Select", "options": "Preventive\nCorrective\nEmergency\nInspection"},
-    {"fieldname": "system_or_asset", "label": "System or Asset", "fieldtype": "Data"},
-    {"fieldname": "scheduled_date", "label": "Scheduled Date", "fieldtype": "Date"},
-    {"fieldname": "completed_on", "label": "Completed On", "fieldtype": "Datetime"},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Planned\nIn Progress\nCompleted\nDeferred\nCancelled", "default": "Planned"},
-    {"fieldname": "performed_by", "label": "Performed By", "fieldtype": "Data"},
-    {"fieldname": "findings", "label": "Findings", "fieldtype": "Text Editor"},
-    {"fieldname": "next_due_date", "label": "Next Due Date", "fieldtype": "Date"}
-  ],
-  "permissions": [
-    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
-    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
-    {"role": "IT Auditor", "read": 1}
-  ]
+    "doctype":  "DocType",
+    "name":  "IT Maintenance",
+    "module":  "IT Book",
+    "autoname":  "format:IT-MAINT-.#####",
+    "title_field":  "maintenance_title",
+    "fields":  [
+                   {
+                       "fieldname":  "maintenance_title",
+                       "label":  "Maintenance Title",
+                       "fieldtype":  "Data",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "maintenance_type",
+                       "label":  "Type",
+                       "fieldtype":  "Select",
+                       "options":  "Preventive\nCorrective\nEmergency\nInspection"
+                   },
+                   {
+                       "fieldname":  "system_or_asset",
+                       "label":  "System or Asset",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "scheduled_date",
+                       "label":  "Scheduled Date",
+                       "fieldtype":  "Date"
+                   },
+                   {
+                       "fieldname":  "completed_on",
+                       "label":  "Completed On",
+                       "fieldtype":  "Datetime"
+                   },
+                   {
+                       "fieldname":  "status",
+                       "label":  "Status",
+                       "fieldtype":  "Select",
+                       "options":  "Planned\nIn Progress\nCompleted\nDeferred\nCancelled",
+                       "default":  "Planned"
+                   },
+                   {
+                       "fieldname":  "performed_by",
+                       "label":  "Performed By",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "findings",
+                       "label":  "Findings",
+                       "fieldtype":  "Text Editor"
+                   },
+                   {
+                       "fieldname":  "next_due_date",
+                       "label":  "Next Due Date",
+                       "fieldtype":  "Date"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1,
+                            "submit":  1,
+                            "cancel":  1,
+                            "amend":  1
+                        },
+                        {
+                            "role":  "IT Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1
+                        },
+                        {
+                            "role":  "IT Officer",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
+                        },
+                        {
+                            "role":  "IT Auditor",
+                            "read":  1
+                        }
+                    ]
 }

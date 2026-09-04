@@ -49,7 +49,7 @@ For development, a cleaner path is to create a bench app with `bench new-app it_
 
 1. Generate these DocTypes inside a live Frappe bench so Frappe can create the database tables and standard metadata.
 2. Build dashboard pages using the summary service in `it_book.reporting.summary`.
-3. Add role permissions for IT Manager, IT Officer, Department Head, and Auditor.
+3. Add role permissions for System Manager, IT Manager, IT Officer, and IT Auditor.
 4. Import the existing spreadsheet rows into `IT Project`.
 5. Add workflow states for approval-heavy records like disposal, change management, and incident closure.
 
@@ -72,6 +72,10 @@ Review `output/it_project_import_candidates.csv`, then import it into the `IT Pr
 5. Configure an outgoing Email Account in Frappe.
 6. Import `output/it_project_import_candidates.csv` into `IT Project`.
 7. Use the scheduled jobs in `hooks.py` for daily and weekly summary emails.
+
+## Access Control
+
+IT Book is hidden from users unless they have `System Manager`, `IT Manager`, `IT Officer`, or `IT Auditor`. The Desk module icon, workspace, dashboard page, reports, and dashboard APIs are restricted to those roles.
 
 ## Included Reports
 

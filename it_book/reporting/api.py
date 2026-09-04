@@ -3,16 +3,19 @@ from __future__ import annotations
 import frappe
 from frappe.utils import add_days, getdate, nowdate
 
+from it_book.access import require_it_book_access
 from it_book.reporting.summary import get_dashboard_summary
 
 
 @frappe.whitelist()
 def dashboard_summary():
+    require_it_book_access()
     return get_dashboard_summary()
 
 
 @frappe.whitelist()
 def open_alerts():
+    require_it_book_access()
     today = getdate(nowdate())
     return {
         "overdue_projects": frappe.get_all(
@@ -45,6 +48,7 @@ def open_alerts():
 
 @frappe.whitelist()
 def upcoming_due_dates(days: int = 14):
+    require_it_book_access()
     today = getdate(nowdate())
     end_date = add_days(today, int(days))
     return {
@@ -71,6 +75,7 @@ def upcoming_due_dates(days: int = 14):
 
 @frappe.whitelist()
 def recent_activity(limit: int = 20):
+    require_it_book_access()
     limit = int(limit)
     return {
         "activities": frappe.get_all(

@@ -1,23 +1,89 @@
 {
-  "doctype": "DocType",
-  "name": "IT Backup Log",
-  "module": "IT Book",
-  "autoname": "format:IT-BACKUP-.#####",
-  "title_field": "system_name",
-  "fields": [
-    {"fieldname": "system_name", "label": "System", "fieldtype": "Data", "reqd": 1},
-    {"fieldname": "backup_type", "label": "Backup Type", "fieldtype": "Select", "options": "Full\nIncremental\nDifferential\nSnapshot\nManual"},
-    {"fieldname": "backup_date", "label": "Backup Date", "fieldtype": "Datetime", "reqd": 1},
-    {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Success\nWarning\nFailed\nSkipped", "default": "Success"},
-    {"fieldname": "size_gb", "label": "Size GB", "fieldtype": "Float"},
-    {"fieldname": "storage_location", "label": "Storage Location", "fieldtype": "Data"},
-    {"fieldname": "verified_restore", "label": "Restore Verified", "fieldtype": "Check"},
-    {"fieldname": "requires_attention", "label": "Requires Attention", "fieldtype": "Check", "read_only": 1},
-    {"fieldname": "remarks", "label": "Remarks", "fieldtype": "Small Text"}
-  ],
-  "permissions": [
-    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
-    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
-    {"role": "IT Auditor", "read": 1}
-  ]
+    "doctype":  "DocType",
+    "name":  "IT Backup Log",
+    "module":  "IT Book",
+    "autoname":  "format:IT-BACKUP-.#####",
+    "title_field":  "system_name",
+    "fields":  [
+                   {
+                       "fieldname":  "system_name",
+                       "label":  "System",
+                       "fieldtype":  "Data",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "backup_type",
+                       "label":  "Backup Type",
+                       "fieldtype":  "Select",
+                       "options":  "Full\nIncremental\nDifferential\nSnapshot\nManual"
+                   },
+                   {
+                       "fieldname":  "backup_date",
+                       "label":  "Backup Date",
+                       "fieldtype":  "Datetime",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "status",
+                       "label":  "Status",
+                       "fieldtype":  "Select",
+                       "options":  "Success\nWarning\nFailed\nSkipped",
+                       "default":  "Success"
+                   },
+                   {
+                       "fieldname":  "size_gb",
+                       "label":  "Size GB",
+                       "fieldtype":  "Float"
+                   },
+                   {
+                       "fieldname":  "storage_location",
+                       "label":  "Storage Location",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "verified_restore",
+                       "label":  "Restore Verified",
+                       "fieldtype":  "Check"
+                   },
+                   {
+                       "fieldname":  "requires_attention",
+                       "label":  "Requires Attention",
+                       "fieldtype":  "Check",
+                       "read_only":  1
+                   },
+                   {
+                       "fieldname":  "remarks",
+                       "label":  "Remarks",
+                       "fieldtype":  "Small Text"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1,
+                            "submit":  1,
+                            "cancel":  1,
+                            "amend":  1
+                        },
+                        {
+                            "role":  "IT Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1
+                        },
+                        {
+                            "role":  "IT Officer",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
+                        },
+                        {
+                            "role":  "IT Auditor",
+                            "read":  1
+                        }
+                    ]
 }

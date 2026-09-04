@@ -35,6 +35,7 @@ def validate_required_files():
         "pyproject.toml",
         "it_book/pyproject.toml",
         "it_book/hooks.py",
+        "it_book/access.py",
         "it_book/patches.txt",
         "it_book/it_book/patches.txt",
         "it_book/it_book/__init__.py",

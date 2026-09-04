@@ -6,7 +6,7 @@ app_email = "it@example.com"
 app_license = "MIT"
 
 fixtures = [
-    {"dt": "Role", "filters": [["role_name", "in", ["IT Manager", "IT Officer", "Department Head", "IT Auditor"]]]},
+    {"dt": "Role", "filters": [["role_name", "in", ["IT Manager", "IT Officer", "IT Auditor"]]]},
     {"dt": "Number Card", "filters": [["module", "=", "IT Book"]]},
     {"dt": "Dashboard Chart", "filters": [["module", "=", "IT Book"]]},
     {"dt": "Workspace", "filters": [["module", "=", "IT Book"]]},

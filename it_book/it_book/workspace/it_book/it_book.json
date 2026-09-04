@@ -1,40 +1,148 @@
 {
-  "doctype": "Workspace",
-  "name": "IT Book",
-  "label": "IT Book",
-  "module": "IT Book",
-  "public": 1,
-  "icon": "device-desktop",
-  "title": "IT Book",
-  "content": "[{\"id\":\"it-book-header\",\"type\":\"header\",\"data\":{\"text\":\"IT Book\"}},{\"id\":\"cards\",\"type\":\"card\",\"data\":{\"card_name\":\"IT Book Overview\"}},{\"id\":\"shortcuts\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IT Book Shortcuts\"}}]",
-  "links": [
-    {"label": "Live Dashboard", "type": "Page", "link_to": "it-book-dashboard", "onboard": 1},
-    {"label": "Projects", "type": "DocType", "link_to": "IT Project", "onboard": 1},
-    {"label": "Maintenance", "type": "DocType", "link_to": "IT Maintenance", "onboard": 1},
-    {"label": "Checklists", "type": "DocType", "link_to": "IT Checklist Run", "onboard": 1},
-    {"label": "Assets", "type": "DocType", "link_to": "IT Asset Record", "onboard": 1},
-    {"label": "Asset Movements", "type": "DocType", "link_to": "IT Asset Movement"},
-    {"label": "Backups", "type": "DocType", "link_to": "IT Backup Log"},
-    {"label": "Activities", "type": "DocType", "link_to": "IT Activity Log"},
-    {"label": "Incidents", "type": "DocType", "link_to": "IT Incident"},
-    {"label": "Downtime", "type": "DocType", "link_to": "IT Downtime"},
-    {"label": "Changes", "type": "DocType", "link_to": "IT Change Register"},
-    {"label": "Report Recipients", "type": "DocType", "link_to": "IT Report Recipient"},
-    {"label": "Project Portfolio Report", "type": "Report", "link_to": "IT Project Portfolio"},
-    {"label": "Backup Health Report", "type": "Report", "link_to": "IT Backup Health"},
-    {"label": "Incident Downtime Report", "type": "Report", "link_to": "IT Incident Downtime"},
-    {"label": "Asset Register Report", "type": "Report", "link_to": "IT Asset Register"},
-    {"label": "Change Register Report", "type": "Report", "link_to": "IT Change Register Report"}
-  ],
-  "charts": [
-    {"chart_name": "IT Project Status", "label": "Project Status"},
-    {"chart_name": "IT Incidents By Priority", "label": "Incidents By Priority"},
-    {"chart_name": "IT Assets By Status", "label": "Assets By Status"}
-  ],
-  "number_cards": [
-    {"card": "IT Book Open Projects", "label": "Open Projects"},
-    {"card": "IT Book Projects At Risk", "label": "Projects At Risk"},
-    {"card": "IT Book Open Incidents", "label": "Open Incidents"},
-    {"card": "IT Book Backup Warnings", "label": "Backup Warnings"}
-  ]
+    "doctype":  "Workspace",
+    "name":  "IT Book",
+    "label":  "IT Book",
+    "module":  "IT Book",
+    "public":  0,
+    "icon":  "device-desktop",
+    "title":  "IT Book",
+    "content":  "[{\"id\":\"it-book-header\",\"type\":\"header\",\"data\":{\"text\":\"IT Book\"}},{\"id\":\"cards\",\"type\":\"card\",\"data\":{\"card_name\":\"IT Book Overview\"}},{\"id\":\"shortcuts\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"IT Book Shortcuts\"}}]",
+    "links":  [
+                  {
+                      "label":  "Live Dashboard",
+                      "type":  "Page",
+                      "link_to":  "it-book-dashboard",
+                      "onboard":  1
+                  },
+                  {
+                      "label":  "Projects",
+                      "type":  "DocType",
+                      "link_to":  "IT Project",
+                      "onboard":  1
+                  },
+                  {
+                      "label":  "Maintenance",
+                      "type":  "DocType",
+                      "link_to":  "IT Maintenance",
+                      "onboard":  1
+                  },
+                  {
+                      "label":  "Checklists",
+                      "type":  "DocType",
+                      "link_to":  "IT Checklist Run",
+                      "onboard":  1
+                  },
+                  {
+                      "label":  "Assets",
+                      "type":  "DocType",
+                      "link_to":  "IT Asset Record",
+                      "onboard":  1
+                  },
+                  {
+                      "label":  "Asset Movements",
+                      "type":  "DocType",
+                      "link_to":  "IT Asset Movement"
+                  },
+                  {
+                      "label":  "Backups",
+                      "type":  "DocType",
+                      "link_to":  "IT Backup Log"
+                  },
+                  {
+                      "label":  "Activities",
+                      "type":  "DocType",
+                      "link_to":  "IT Activity Log"
+                  },
+                  {
+                      "label":  "Incidents",
+                      "type":  "DocType",
+                      "link_to":  "IT Incident"
+                  },
+                  {
+                      "label":  "Downtime",
+                      "type":  "DocType",
+                      "link_to":  "IT Downtime"
+                  },
+                  {
+                      "label":  "Changes",
+                      "type":  "DocType",
+                      "link_to":  "IT Change Register"
+                  },
+                  {
+                      "label":  "Report Recipients",
+                      "type":  "DocType",
+                      "link_to":  "IT Report Recipient"
+                  },
+                  {
+                      "label":  "Project Portfolio Report",
+                      "type":  "Report",
+                      "link_to":  "IT Project Portfolio"
+                  },
+                  {
+                      "label":  "Backup Health Report",
+                      "type":  "Report",
+                      "link_to":  "IT Backup Health"
+                  },
+                  {
+                      "label":  "Incident Downtime Report",
+                      "type":  "Report",
+                      "link_to":  "IT Incident Downtime"
+                  },
+                  {
+                      "label":  "Asset Register Report",
+                      "type":  "Report",
+                      "link_to":  "IT Asset Register"
+                  },
+                  {
+                      "label":  "Change Register Report",
+                      "type":  "Report",
+                      "link_to":  "IT Change Register Report"
+                  }
+              ],
+    "charts":  [
+                   {
+                       "chart_name":  "IT Project Status",
+                       "label":  "Project Status"
+                   },
+                   {
+                       "chart_name":  "IT Incidents By Priority",
+                       "label":  "Incidents By Priority"
+                   },
+                   {
+                       "chart_name":  "IT Assets By Status",
+                       "label":  "Assets By Status"
+                   }
+               ],
+    "number_cards":  [
+                         {
+                             "card":  "IT Book Open Projects",
+                             "label":  "Open Projects"
+                         },
+                         {
+                             "card":  "IT Book Projects At Risk",
+                             "label":  "Projects At Risk"
+                         },
+                         {
+                             "card":  "IT Book Open Incidents",
+                             "label":  "Open Incidents"
+                         },
+                         {
+                             "card":  "IT Book Backup Warnings",
+                             "label":  "Backup Warnings"
+                         }
+                     ],
+    "roles":  [
+                  {
+                      "role":  "System Manager"
+                  },
+                  {
+                      "role":  "IT Manager"
+                  },
+                  {
+                      "role":  "IT Officer"
+                  },
+                  {
+                      "role":  "IT Auditor"
+                  }
+              ]
 }

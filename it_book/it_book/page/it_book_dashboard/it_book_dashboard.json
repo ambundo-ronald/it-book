@@ -1,8 +1,22 @@
 {
-  "doctype": "Page",
-  "name": "it-book-dashboard",
-  "module": "IT Book",
-  "title": "IT Book Dashboard",
-  "icon": "fa fa-desktop",
-  "standard": "Yes"
+    "doctype":  "Page",
+    "name":  "it-book-dashboard",
+    "module":  "IT Book",
+    "title":  "IT Book Dashboard",
+    "icon":  "fa fa-desktop",
+    "standard":  "Yes",
+    "roles":  [
+                  {
+                      "role":  "System Manager"
+                  },
+                  {
+                      "role":  "IT Manager"
+                  },
+                  {
+                      "role":  "IT Officer"
+                  },
+                  {
+                      "role":  "IT Auditor"
+                  }
+              ]
 }

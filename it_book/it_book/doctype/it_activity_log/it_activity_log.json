@@ -1,22 +1,81 @@
 {
-  "doctype": "DocType",
-  "name": "IT Activity Log",
-  "module": "IT Book",
-  "autoname": "format:IT-ACT-.#####",
-  "title_field": "activity_title",
-  "fields": [
-    {"fieldname": "activity_title", "label": "Activity Title", "fieldtype": "Data", "reqd": 1},
-    {"fieldname": "activity_type", "label": "Activity Type", "fieldtype": "Select", "options": "System Usage\nSupport\nUser Administration\nSecurity\nTraining\nAudit\nOther"},
-    {"fieldname": "system_name", "label": "System", "fieldtype": "Data"},
-    {"fieldname": "department", "label": "Department", "fieldtype": "Data"},
-    {"fieldname": "activity_date", "label": "Activity Date", "fieldtype": "Datetime"},
-    {"fieldname": "performed_by", "label": "Performed By", "fieldtype": "Data"},
-    {"fieldname": "impact", "label": "Impact", "fieldtype": "Select", "options": "Low\nMedium\nHigh"},
-    {"fieldname": "details", "label": "Details", "fieldtype": "Text Editor"}
-  ],
-  "permissions": [
-    {"role": "IT Manager", "read": 1, "write": 1, "create": 1, "delete": 1},
-    {"role": "IT Officer", "read": 1, "write": 1, "create": 1},
-    {"role": "IT Auditor", "read": 1}
-  ]
+    "doctype":  "DocType",
+    "name":  "IT Activity Log",
+    "module":  "IT Book",
+    "autoname":  "format:IT-ACT-.#####",
+    "title_field":  "activity_title",
+    "fields":  [
+                   {
+                       "fieldname":  "activity_title",
+                       "label":  "Activity Title",
+                       "fieldtype":  "Data",
+                       "reqd":  1
+                   },
+                   {
+                       "fieldname":  "activity_type",
+                       "label":  "Activity Type",
+                       "fieldtype":  "Select",
+                       "options":  "System Usage\nSupport\nUser Administration\nSecurity\nTraining\nAudit\nOther"
+                   },
+                   {
+                       "fieldname":  "system_name",
+                       "label":  "System",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "department",
+                       "label":  "Department",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "activity_date",
+                       "label":  "Activity Date",
+                       "fieldtype":  "Datetime"
+                   },
+                   {
+                       "fieldname":  "performed_by",
+                       "label":  "Performed By",
+                       "fieldtype":  "Data"
+                   },
+                   {
+                       "fieldname":  "impact",
+                       "label":  "Impact",
+                       "fieldtype":  "Select",
+                       "options":  "Low\nMedium\nHigh"
+                   },
+                   {
+                       "fieldname":  "details",
+                       "label":  "Details",
+                       "fieldtype":  "Text Editor"
+                   }
+               ],
+    "permissions":  [
+                        {
+                            "role":  "System Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1,
+                            "submit":  1,
+                            "cancel":  1,
+                            "amend":  1
+                        },
+                        {
+                            "role":  "IT Manager",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1,
+                            "delete":  1
+                        },
+                        {
+                            "role":  "IT Officer",
+                            "read":  1,
+                            "write":  1,
+                            "create":  1
+                        },
+                        {
+                            "role":  "IT Auditor",
+                            "read":  1
+                        }
+                    ]
 }
