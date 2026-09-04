@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Downtime",
     "module":  "IT Book",
-    "autoname":  "format:IT-DOWN-.#####",
+    "autoname":  "format:IT-DOWN-{#####}",
     "title_field":  "system_name",
     "fields":  [
                    {

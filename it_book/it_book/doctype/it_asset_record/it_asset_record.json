@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Asset Record",
     "module":  "IT Book",
-    "autoname":  "format:IT-ASSET-.#####",
+    "autoname":  "format:IT-ASSET-{#####}",
     "title_field":  "asset_name",
     "fields":  [
                    {

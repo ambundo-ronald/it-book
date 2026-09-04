@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Checklist Run",
     "module":  "IT Book",
-    "autoname":  "format:IT-CHK-.#####",
+    "autoname":  "format:IT-CHK-{#####}",
     "title_field":  "subject",
     "fields":  [
                    {

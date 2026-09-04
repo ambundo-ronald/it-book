@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Maintenance",
     "module":  "IT Book",
-    "autoname":  "format:IT-MAINT-.#####",
+    "autoname":  "format:IT-MAINT-{#####}",
     "title_field":  "maintenance_title",
     "fields":  [
                    {

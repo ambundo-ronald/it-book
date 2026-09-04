@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Activity Log",
     "module":  "IT Book",
-    "autoname":  "format:IT-ACT-.#####",
+    "autoname":  "format:IT-ACT-{#####}",
     "title_field":  "activity_title",
     "fields":  [
                    {

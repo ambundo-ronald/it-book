@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Backup Log",
     "module":  "IT Book",
-    "autoname":  "format:IT-BACKUP-.#####",
+    "autoname":  "format:IT-BACKUP-{#####}",
     "title_field":  "system_name",
     "fields":  [
                    {

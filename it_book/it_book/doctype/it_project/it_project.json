@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Project",
     "module":  "IT Book",
-    "autoname":  "format:IT-PROJ-.#####",
+    "autoname":  "format:IT-PROJ-{#####}",
     "title_field":  "project_title",
     "sort_field":  "modified",
     "sort_order":  "DESC",

@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Asset Movement",
     "module":  "IT Book",
-    "autoname":  "format:IT-ASSET-MOVE-.#####",
+    "autoname":  "format:IT-ASSET-MOVE-{#####}",
     "title_field":  "asset",
     "is_submittable":  1,
     "fields":  [

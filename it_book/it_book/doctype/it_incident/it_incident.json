@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Incident",
     "module":  "IT Book",
-    "autoname":  "format:IT-INC-.#####",
+    "autoname":  "format:IT-INC-{#####}",
     "title_field":  "incident_title",
     "fields":  [
                    {

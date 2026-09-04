@@ -2,7 +2,7 @@
     "doctype":  "DocType",
     "name":  "IT Change Register",
     "module":  "IT Book",
-    "autoname":  "format:IT-CHG-.#####",
+    "autoname":  "format:IT-CHG-{#####}",
     "title_field":  "change_title",
     "fields":  [
                    {
